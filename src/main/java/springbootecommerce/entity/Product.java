@@ -22,7 +22,7 @@ public class Product {
 
     private Long id;
 
-    private ProductCategory category;
+//    private ProductCategory category;
 
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
@@ -184,42 +184,42 @@ public class Product {
             this.categoryId = categoryId;
         }
 
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
+//        @Override
+//        public boolean equals(Object o) {
+//            if (this == o) return true;
+//            if (o == null || getClass() != o.getClass()) return false;
+//
+//            ProductEntity that = (ProductEntity) o;
+//
+//            if (id != that.id) return false;
+//            if (categoryId != that.categoryId) return false;
+//            if (sku != null ? !sku.equals(that.sku) : that.sku != null) return false;
+//            if (name != null ? !name.equals(that.name) : that.name != null) return false;
+//            if (description != null ? !description.equals(that.description) : that.description != null) return false;
+//            if (unitPrice != null ? !unitPrice.equals(that.unitPrice) : that.unitPrice != null) return false;
+//            if (imageUrl != null ? !imageUrl.equals(that.imageUrl) : that.imageUrl != null) return false;
+//            if (active != null ? !active.equals(that.active) : that.active != null) return false;
+//            if (unitsInStock != null ? !unitsInStock.equals(that.unitsInStock) : that.unitsInStock != null) return false;
+//            if (dateCreated != null ? !dateCreated.equals(that.dateCreated) : that.dateCreated != null) return false;
+//            if (lastUpdated != null ? !lastUpdated.equals(that.lastUpdated) : that.lastUpdated != null) return false;
+//
+//            return true;
+//        }
 
-            ProductEntity that = (ProductEntity) o;
-
-            if (id != that.id) return false;
-            if (categoryId != that.categoryId) return false;
-            if (sku != null ? !sku.equals(that.sku) : that.sku != null) return false;
-            if (name != null ? !name.equals(that.name) : that.name != null) return false;
-            if (description != null ? !description.equals(that.description) : that.description != null) return false;
-            if (unitPrice != null ? !unitPrice.equals(that.unitPrice) : that.unitPrice != null) return false;
-            if (imageUrl != null ? !imageUrl.equals(that.imageUrl) : that.imageUrl != null) return false;
-            if (active != null ? !active.equals(that.active) : that.active != null) return false;
-            if (unitsInStock != null ? !unitsInStock.equals(that.unitsInStock) : that.unitsInStock != null) return false;
-            if (dateCreated != null ? !dateCreated.equals(that.dateCreated) : that.dateCreated != null) return false;
-            if (lastUpdated != null ? !lastUpdated.equals(that.lastUpdated) : that.lastUpdated != null) return false;
-
-            return true;
-        }
-
-        @Override
-        public int hashCode() {
-            int result = (int) (id ^ (id >>> 32));
-            result = 31 * result + (sku != null ? sku.hashCode() : 0);
-            result = 31 * result + (name != null ? name.hashCode() : 0);
-            result = 31 * result + (description != null ? description.hashCode() : 0);
-            result = 31 * result + (unitPrice != null ? unitPrice.hashCode() : 0);
-            result = 31 * result + (imageUrl != null ? imageUrl.hashCode() : 0);
-            result = 31 * result + (active != null ? active.hashCode() : 0);
-            result = 31 * result + (unitsInStock != null ? unitsInStock.hashCode() : 0);
-            result = 31 * result + (dateCreated != null ? dateCreated.hashCode() : 0);
-            result = 31 * result + (lastUpdated != null ? lastUpdated.hashCode() : 0);
-            result = 31 * result + (int) (categoryId ^ (categoryId >>> 32));
-            return result;
-        }
+//        @Override
+//        public int hashCode() {
+//            int result = (int) (id ^ (id >>> 32));
+//            result = 31 * result + (sku != null ? sku.hashCode() : 0);
+//            result = 31 * result + (name != null ? name.hashCode() : 0);
+//            result = 31 * result + (description != null ? description.hashCode() : 0);
+//            result = 31 * result + (unitPrice != null ? unitPrice.hashCode() : 0);
+//            result = 31 * result + (imageUrl != null ? imageUrl.hashCode() : 0);
+//            result = 31 * result + (active != null ? active.hashCode() : 0);
+//            result = 31 * result + (unitsInStock != null ? unitsInStock.hashCode() : 0);
+//            result = 31 * result + (dateCreated != null ? dateCreated.hashCode() : 0);
+//            result = 31 * result + (lastUpdated != null ? lastUpdated.hashCode() : 0);
+//            result = 31 * result + (int) (categoryId ^ (categoryId >>> 32));
+//            return result;
+//        }
     }
 }
